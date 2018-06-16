@@ -1,20 +1,84 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+
+<!--<p>-->
+<!--Witam na kursie {{title | uppercase}} <br>-->
+  <!--Pi = {{pi | number: '1.1-2'}} <br>-->
+  <!--Pies = {{dog?.name}} <br>-->
+  <!--ma {{dog?.age}} lat <br>-->
+
+  <!--{{date | date: 'dd-MM-yy'}} rok ziom <br>-->
+
+<!--</p>-->
+<!--<p>Dni tygodnia</p>-->
+<!--<ul>-->
+  <!--<ng-container *ngFor="let day of days;let e = even">-->
+  <!--<li *ngIf="e">-->
+    <!--{{day}}-->
+  <!--</li>-->
+  <!--</ng-container>-->
+<!--</ul>-->
+
+<!--<div *ngFor="let day of days">-->
+  <!--<div [ngSwitch]="day">-->
+    <!--<div *ngSwitchCase="'Poniedzialek'">Monday</div>-->
+    <!--<div *ngSwitchCase="'Wtorek'">Tuesday</div>-->
+    <!--<div *ngSwitchCase="'Sroda'">Wednesday</div>-->
+    <!--<div *ngSwitchCase="'Czwartek'">Thursday</div>-->
+    <!--<div *ngSwitchCase="'Piatek'">Friday</div>-->
+    <!--<div *ngSwitchCase="'Sobota'">Saturday</div>-->
+    <!--<div *ngSwitchCase="'Niedziela'">Sunday</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+  <!--<div *ngFor="let dog of dogs; let i = index">-->
+    <!--<div *ngIf="dog.age < 3">-->
+   <!--{{i + 1}} Moj pies {{dog.name +' '+ dog.age}}-->
+    <!--</div>-->
+    <!--</div>-->
+
+<!--<app-test *ngFor="let i of [0,1,2,3]"></app-test>-->
+
+<!--<h3 [class]="colorClass">Angular - Property binding</h3>-->
+<!--<img [src]="logoUrl">-->
+<!--<input [maxLength]="maxLengt" [value]="inputText">-->
+<!--<button [disabled]="isDisable" (click)="change()">Dodaj</button>-->
+
+<!--<h3 [class]="colorClass">Angular - Event binding</h3>-->
+
+<!--<input [disabled]="isDisable" (focus)="onFocus()">-->
+<!--<br>-->
+<!--<input [disabled]="isDisable" (click)="onClick($event)">-->
+<!--<br>-->
+<!--<input [disabled]="isDisable" (mousemove)="onMouseMove($event)">-->
+<!--<br>-->
+<!--<input [disabled]="isDisable" (paste)="onPaste()"> {{inputText}}-->
+<!--<br>-->
+<!--<button (click)="change()">Zmiana</button>-->
+
+<!--<h3 [class]="colorClass">Angular - Data binding</h3>-->
+
+<!--<p> Ten pracownik to {{profession}}, a jego umiejętności to {{skill}}</p>-->
+
+<!--<label for="male">Zawód</label>-->
+<!--<input [(ngModel)]="profession">-->
+<!--<br>-->
+<!--<label for="male">Umiejetnosci</label>-->
+<!--<input [(ngModel)]="skill">-->
+
+<div>
+
+  <div class="container">
+<app-add-task></app-add-task>
+  </div>
+
+  <div class="container">
+
+   <app-todo-task></app-todo-task>
+
+   <app-done-task> </app-done-task>
+
+  </div>
+
+</div>
+
+<!--<app-test [tasks]="tasksList" (eventTask)="selected($event)"></app-test>-->

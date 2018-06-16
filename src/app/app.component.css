@@ -1,0 +1,12 @@
+.color{
+  color: blue;
+}
+.color2{
+  color: red;
+}
+
+.container
+{
+  display: flex;
+  justify-content: space-around;
+}
