@@ -1,6 +1,8 @@
 export interface Task {
+  _id?: { $oid: string };
   name: string;
-  created: Date;
-  end?: Date; // ?- nie wymagane na początku
+  created: string;
+  end?: string; // ?- nie wymagane na początku
+  isDone: boolean;
 
 }
